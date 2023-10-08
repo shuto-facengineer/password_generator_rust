@@ -15,6 +15,7 @@ pub fn parse(args: Vec<String>) -> usize {
         },
         None => DEFAULT_LENGTH, // 引数がなければデフォルト値を使用
     };
+
     length
 }
 
