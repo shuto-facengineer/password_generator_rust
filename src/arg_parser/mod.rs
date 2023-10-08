@@ -1,9 +1,6 @@
-use std::env;
-
 const DEFAULT_LENGTH: usize = 12;
 
-pub fn parse(args: env::Args) -> usize {
-    let args: Vec<String> = args.collect();
+pub fn parse(args: Vec<String>) -> usize {
     let length = match args.get(1) {
         Some(l) => match l.parse::<usize>() { 
             Ok(parsed_length) => parsed_length,
