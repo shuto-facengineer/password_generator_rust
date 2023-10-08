@@ -1,13 +1,6 @@
 const DEFAULT_LENGTH: usize = 12;
 
 pub fn parse(args: Vec<String>) -> usize {
-    let program_name = match args.get(0) {
-        Some(n) => n,
-        None => "hoge",
-    };
-
-    println!("program_name: {}", program_name);
-
     let length = match args.get(1) {
         Some(l) => match l.parse::<usize>() { 
             Ok(parsed_length) => parsed_length,
